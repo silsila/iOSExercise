@@ -71,7 +71,6 @@ extern NSString *PageTitle;
     cell.thumbImage.image = [UIImage imageNamed:@""];
     cell.thumbImage.contentMode = UIViewContentModeScaleAspectFit;
     cell.thumbImage.backgroundColor = [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1.0];
-  //  cell.headingLabel.textAlignment = NSTextAlignmentCenter;
     cell.headingLabel.numberOfLines = 0;
     cell.descriptionLabel.numberOfLines = 0;
     DataContent *datacontent = [DataArray objectAtIndex:indexPath.row];
