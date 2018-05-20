@@ -8,8 +8,9 @@
 
 #import "DropboxContentViewController.h"
 #import "DropBoxTableViewCell.h"
-#import <SDWebImage/UIImageView+WebCache.h>
 #import "AppDelegate.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
+#import "UIImageView+AFNetworking.h"
 @interface DropboxContentViewController ()
 {
     AppDelegate *appl;
@@ -28,7 +29,7 @@ extern NSString *PageTitle;
     //call URL and get Data
     self.navigationController.navigationBar.tintColor = [UIColor blackColor];
     JsonData *jsondata = [[JsonData alloc] init];
-      NSURL *url = [[NSBundle mainBundle] URLForResource:@"Dropbox" withExtension:@"json"];
+    NSURL *url =[[NSBundle mainBundle] URLForResource:@"Dropbox" withExtension:@"json"];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         DataArray = [jsondata DataFromJSONFile:url];
          [self.DropboxTable performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
@@ -38,7 +39,7 @@ extern NSString *PageTitle;
     self.DropboxTable.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     self.DropboxTable.delegate = self;
     self.DropboxTable.dataSource = self;
-    self.DropboxTable.estimatedRowHeight  =250;
+    self.DropboxTable.estimatedRowHeight  =350;
     self.DropboxTable.rowHeight = UITableViewAutomaticDimension;
     self.DropboxTable.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     [self.view addSubview:self.DropboxTable];
@@ -63,9 +64,14 @@ extern NSString *PageTitle;
     {
         cell = [[DropBoxTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
-    cell.separatorInset = UIEdgeInsetsMake(0.f, cell.bounds.size.width, 0.f, 0.f);
+   
+    cell.separatorInset = UIEdgeInsetsZero;
+    cell.layoutMargins = UIEdgeInsetsZero;
+    cell.preservesSuperviewLayoutMargins = NO;
     cell.thumbImage.image = [UIImage imageNamed:@""];
-    cell.headingLabel.textAlignment = NSTextAlignmentCenter;
+    cell.thumbImage.contentMode = UIViewContentModeScaleAspectFit;
+    cell.thumbImage.backgroundColor = [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1.0];
+  //  cell.headingLabel.textAlignment = NSTextAlignmentCenter;
     cell.headingLabel.numberOfLines = 0;
     cell.descriptionLabel.numberOfLines = 0;
     DataContent *datacontent = [DataArray objectAtIndex:indexPath.row];
@@ -92,15 +98,16 @@ extern NSString *PageTitle;
     }
     if ([datacontent.ImageString isKindOfClass:[NSString class]])
     {
+       
+        [cell.thumbImage cancelImageDownloadTask];
         cell.thumbImage.hidden = NO;
         NSString *url1=datacontent.ImageString;
-        [cell.thumbImage sd_setImageWithURL:[NSURL URLWithString:url1]
-                           placeholderImage:[UIImage imageNamed:@"waiting.png"]];
+        [cell.thumbImage setImageWithURL:[NSURL URLWithString:url1]
+                         placeholderImage:nil];
         
     }
     else
     {
-        cell.thumbImage.hidden = YES;
     }
     return cell;
 }
@@ -114,5 +121,9 @@ extern NSString *PageTitle;
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
+}
+-(void)viewWillDisappear:(BOOL)animated
+{
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
 }
 @end

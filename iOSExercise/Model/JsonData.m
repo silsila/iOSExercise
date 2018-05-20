@@ -32,12 +32,9 @@ NSString *PageTitle;
     
     // Now create a NSDictionary from the JSON data
     NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    NSLog(@"title is %@",jsonDictionary);
     PageTitle = [jsonDictionary objectForKey:@"title"];
-//    
-//    DropboxContentViewController *drop = [[DropboxContentViewController alloc]init];
-//   
-//    NSLog(@"title is %@",self.PageTitle);
-    
+
     // Create a new array to hold the data
     NSMutableArray *rows = [[NSMutableArray alloc] init];
     

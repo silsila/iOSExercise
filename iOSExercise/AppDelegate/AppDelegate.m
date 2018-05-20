@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    NSURLCache *sharedCache = [[NSURLCache alloc] initWithMemoryCapacity:0
+                                                            diskCapacity:0
+                                                                diskPath:nil];
+    [NSURLCache setSharedURLCache:sharedCache];
+    
     //add navigationcontroller and make it rootviewcontroller
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
      DropboxContentViewController *Dropview = [[DropboxContentViewController alloc] init];

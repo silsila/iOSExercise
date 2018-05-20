@@ -23,7 +23,7 @@
         // Allo and init description label
         self.descriptionLabel = [[UILabel alloc] init];
         self.descriptionLabel.textColor = [UIColor blackColor];
-        self.descriptionLabel.font = [UIFont fontWithName:@"Arial" size:12.0f];
+        self.descriptionLabel.font = [UIFont fontWithName:@"Helvetica" size:14.0f];
         
         //alloc and init imageview
         self.thumbImage = [[UIImageView alloc] init];
@@ -31,8 +31,9 @@
         //alloc and init header label
         self.headingLabel = [[UILabel alloc] init];
         self.headingLabel.textColor = [UIColor blackColor];
-        self.headingLabel.font = [UIFont fontWithName:@"Arial" size:15.0f];
-       
+        self.headingLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:18.0f];
+      // [self.headingLabel setFont:[UIFont fontWithName:@"SF-Bold" size:13.0]];
+        
         //add programatically created view to cell
         [self addSubview:self.descriptionLabel];
         [self addSubview:self.thumbImage];
@@ -62,7 +63,7 @@
                                                                      attribute:NSLayoutAttributeTop
                                                                      relatedBy:NSLayoutRelationEqual
                                                                         toItem:self
-                                                                     attribute:NSLayoutAttributeTop
+                                                                     attribute:NSLayoutAttributeTopMargin
                                                                     multiplier:1.0
                                                                       constant:10.0]];
         [self addConstraint:[NSLayoutConstraint constraintWithItem:_thumbImage
@@ -79,7 +80,7 @@
                                                                         toItem:_headingLabel
                                                                      attribute:NSLayoutAttributeTop
                                                                     multiplier:1.0
-                                                                      constant:-20.0]];
+                                                                      constant:-10.0]];
         
         [self addConstraint:[NSLayoutConstraint constraintWithItem:_thumbImage
                                                          attribute:NSLayoutAttributeHeight
@@ -113,7 +114,7 @@
                                                             toItem:_descriptionLabel
                                                          attribute:NSLayoutAttributeTop
                                                         multiplier:1.0
-                                                          constant:-20.0]];
+                                                          constant:-5.0]];
         
         [self addConstraint:[NSLayoutConstraint constraintWithItem:_descriptionLabel
                                                          attribute:NSLayoutAttributeLeading
@@ -138,7 +139,7 @@
                                                             toItem:self
                                                          attribute:NSLayoutAttributeBottomMargin
                                                         multiplier:1.0
-                                                          constant:10.0]];
+                                                          constant:-10.0]];
     }
     
 

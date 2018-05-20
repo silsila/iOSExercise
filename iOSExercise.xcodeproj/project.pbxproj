@@ -17,7 +17,6 @@
 		A0C52CCC20B1A061004337F8 /* iOSExerciseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52CCB20B1A061004337F8 /* iOSExerciseUITests.m */; };
 		A0C52D0420B1B8A2004337F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52D0320B1B8A2004337F8 /* AppDelegate.m */; };
 		A0C52D0920B1B8B6004337F8 /* DropboxContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52D0720B1B8B6004337F8 /* DropboxContentViewController.m */; };
-		A0C52D0A20B1B8B6004337F8 /* waiting.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C52D0820B1B8B6004337F8 /* waiting.png */; };
 		A0C52D1F20B1B984004337F8 /* DataContent.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52D1920B1B984004337F8 /* DataContent.m */; };
 		A0C52D2020B1B984004337F8 /* Dropbox.json in Resources */ = {isa = PBXBuildFile; fileRef = A0C52D1A20B1B984004337F8 /* Dropbox.json */; };
 		A0C52D2120B1B984004337F8 /* DropBoxTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52D1C20B1B984004337F8 /* DropBoxTableViewCell.m */; };
@@ -62,7 +61,6 @@
 		A0C52D0320B1B8A2004337F8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A0C52D0620B1B8B6004337F8 /* DropboxContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxContentViewController.h; sourceTree = "<group>"; };
 		A0C52D0720B1B8B6004337F8 /* DropboxContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxContentViewController.m; sourceTree = "<group>"; };
-		A0C52D0820B1B8B6004337F8 /* waiting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waiting.png; sourceTree = "<group>"; };
 		A0C52D1820B1B984004337F8 /* DataContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataContent.h; sourceTree = "<group>"; };
 		A0C52D1920B1B984004337F8 /* DataContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataContent.m; sourceTree = "<group>"; };
 		A0C52D1A20B1B984004337F8 /* Dropbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dropbox.json; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 			children = (
 				A0C52D0620B1B8B6004337F8 /* DropboxContentViewController.h */,
 				A0C52D0720B1B8B6004337F8 /* DropboxContentViewController.m */,
-				A0C52D0820B1B8B6004337F8 /* waiting.png */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -332,7 +329,6 @@
 				A0C52CB420B1A060004337F8 /* LaunchScreen.storyboard in Resources */,
 				A0C52CB120B1A060004337F8 /* Assets.xcassets in Resources */,
 				A0C52D2020B1B984004337F8 /* Dropbox.json in Resources */,
-				A0C52D0A20B1B8B6004337F8 /* waiting.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
