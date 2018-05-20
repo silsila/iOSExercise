@@ -10,8 +10,8 @@
 
 @interface DataContent : NSObject
 - (id)initWithJSONDictionary:(NSDictionary *)jsonDictionary;
-@property (readonly) NSString *ImageArray;
-@property (readonly) NSString *HeadingArray;
-@property (readonly) NSString *DescArray;
+@property (readonly) NSString *ImageString;
+@property (readonly) NSString *HeadingString;
+@property (readonly) NSString *DescString;
 
 @end

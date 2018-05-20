@@ -203,13 +203,13 @@
 		A0C52D1720B1B984004337F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A0C52D1A20B1B984004337F8 /* Dropbox.json */,
 				A0C52D1820B1B984004337F8 /* DataContent.h */,
 				A0C52D1920B1B984004337F8 /* DataContent.m */,
-				A0C52D1A20B1B984004337F8 /* Dropbox.json */,
-				A0C52D1B20B1B984004337F8 /* DropBoxTableViewCell.h */,
-				A0C52D1C20B1B984004337F8 /* DropBoxTableViewCell.m */,
 				A0C52D1D20B1B984004337F8 /* JsonData.h */,
 				A0C52D1E20B1B984004337F8 /* JsonData.m */,
+				A0C52D1B20B1B984004337F8 /* DropBoxTableViewCell.h */,
+				A0C52D1C20B1B984004337F8 /* DropBoxTableViewCell.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -658,7 +658,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSExercise/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Abc.iOSExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -673,7 +673,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSExercise/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Abc.iOSExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -10,7 +10,8 @@
 
 @implementation DropBoxTableViewCell
 
-- (void)awakeFromNib {
+- (void)awakeFromNib
+{
     [super awakeFromNib];
     // Initialization code
 }
@@ -19,20 +20,25 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self)
     {
-        // configure control(s)
+        // Allo and init description label
         self.descriptionLabel = [[UILabel alloc] init];
         self.descriptionLabel.textColor = [UIColor blackColor];
         self.descriptionLabel.font = [UIFont fontWithName:@"Arial" size:12.0f];
         
+        //alloc and init imageview
         self.thumbImage = [[UIImageView alloc] init];
         
+        //alloc and init header label
         self.headingLabel = [[UILabel alloc] init];
         self.headingLabel.textColor = [UIColor blackColor];
         self.headingLabel.font = [UIFont fontWithName:@"Arial" size:15.0f];
-        
+       
+        //add programatically created view to cell
         [self addSubview:self.descriptionLabel];
         [self addSubview:self.thumbImage];
         [self addSubview:self.headingLabel];
+        
+        //add constraints to header , image and description
         self.descriptionLabel.translatesAutoresizingMaskIntoConstraints = NO;
         self.headingLabel.translatesAutoresizingMaskIntoConstraints = NO;
         self.thumbImage.translatesAutoresizingMaskIntoConstraints = NO;
@@ -138,10 +144,9 @@
 
     return self;
 }
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+{
     [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
 }
 
 @end

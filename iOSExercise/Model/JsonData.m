@@ -10,11 +10,13 @@
 #import "DataContent.h"
 #import "DropboxContentViewController.h"
 #import "AppDelegate.h"
+
 @interface JsonData ()
 {
     AppDelegate *appl;
 }
 @end
+NSString *PageTitle;
 @implementation JsonData
 
 - (NSArray *)DataFromJSONFile:(NSURL *)url;
@@ -30,24 +32,27 @@
     
     // Now create a NSDictionary from the JSON data
     NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        //DataContent * PageTitle1 = [[DataContent alloc]init];
-        self.PageTitle = [jsonDictionary objectForKey:@"title"];
-   // NSLog(@"Title is :%@",location.PageTitle );
+    PageTitle = [jsonDictionary objectForKey:@"title"];
+//    
+//    DropboxContentViewController *drop = [[DropboxContentViewController alloc]init];
+//   
+//    NSLog(@"title is %@",self.PageTitle);
     
-    // Create a new array to hold the locations
+    // Create a new array to hold the data
     NSMutableArray *rows = [[NSMutableArray alloc] init];
     
-    // Get an array of dictionaries with the key "locations"
+    // Get an array of dictionaries with the key "Rows"
     NSArray *array = [jsonDictionary objectForKey:@"rows"];
     // Iterate through the array of dictionaries
-    for(NSDictionary *dict in array) {
-        // Create a new Location object for each one and initialise it with information in the dictionary
+    for(NSDictionary *dict in array)
+    {
+        // Create a new data object for each one and initialise it with information in the dictionary
         DataContent *datacontent = [[DataContent alloc] initWithJSONDictionary:dict];
-        // Add the Location object to the array
+        // Add the data object to the array
         [rows addObject:datacontent];
     }
-    appl = [[UIApplication sharedApplication]delegate];
-    appl.PageTitle = self.PageTitle;
+//    appl = [[UIApplication sharedApplication]delegate];
+//    appl.PageTitle = self.PageTitle;
     // Return the array of data objects
     return rows;
 }

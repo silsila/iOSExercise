@@ -10,5 +10,5 @@
 
 @interface JsonData : NSObject
 - (NSArray *)DataFromJSONFile:(NSURL *)url;
-@property () NSString *PageTitle;
+
 @end

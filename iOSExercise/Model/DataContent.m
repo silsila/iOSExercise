@@ -15,10 +15,9 @@
     if(self = [self init])
     {
         // Assign all properties with keyed values from the dictionary
-        _HeadingArray = [jsonDictionary objectForKey:@"title"];
-        _DescArray = [jsonDictionary objectForKey:@"description"];
-        _ImageArray = [jsonDictionary objectForKey:@"imageHref"];
-        //_PageTitle = [ objectForKey:@"telephone"];
+        _HeadingString = [jsonDictionary objectForKey:@"title"];
+        _DescString = [jsonDictionary objectForKey:@"description"];
+        _ImageString = [jsonDictionary objectForKey:@"imageHref"];
     }
     return self;
 }
