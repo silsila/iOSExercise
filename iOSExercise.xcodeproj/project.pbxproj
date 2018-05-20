@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A0C52CA920B1A060004337F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52CA820B1A060004337F8 /* AppDelegate.m */; };
-		A0C52CAC20B1A060004337F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52CAB20B1A060004337F8 /* ViewController.m */; };
-		A0C52CAF20B1A060004337F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C52CAD20B1A060004337F8 /* Main.storyboard */; };
+		1E73563A877F30A5C085A7D0 /* libPods-iOSExerciseUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D331885DB56A325C374FDA /* libPods-iOSExerciseUITests.a */; };
+		4428C818A83A059109509D06 /* libPods-iOSExercise.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A33E335F6248BD629896864 /* libPods-iOSExercise.a */; };
+		5527CFFE7F993E8A293A28C1 /* libPods-iOSExerciseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA64442B8BB8EF3FB54FF3EA /* libPods-iOSExerciseTests.a */; };
 		A0C52CB120B1A060004337F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C52CB020B1A060004337F8 /* Assets.xcassets */; };
 		A0C52CB420B1A060004337F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C52CB220B1A060004337F8 /* LaunchScreen.storyboard */; };
 		A0C52CB720B1A060004337F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52CB620B1A060004337F8 /* main.m */; };
 		A0C52CC120B1A061004337F8 /* iOSExerciseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52CC020B1A061004337F8 /* iOSExerciseTests.m */; };
 		A0C52CCC20B1A061004337F8 /* iOSExerciseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52CCB20B1A061004337F8 /* iOSExerciseUITests.m */; };
+		A0C52D0420B1B8A2004337F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52D0320B1B8A2004337F8 /* AppDelegate.m */; };
+		A0C52D0920B1B8B6004337F8 /* DropboxContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52D0720B1B8B6004337F8 /* DropboxContentViewController.m */; };
+		A0C52D0A20B1B8B6004337F8 /* waiting.png in Resources */ = {isa = PBXBuildFile; fileRef = A0C52D0820B1B8B6004337F8 /* waiting.png */; };
+		A0C52D1F20B1B984004337F8 /* DataContent.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52D1920B1B984004337F8 /* DataContent.m */; };
+		A0C52D2020B1B984004337F8 /* Dropbox.json in Resources */ = {isa = PBXBuildFile; fileRef = A0C52D1A20B1B984004337F8 /* Dropbox.json */; };
+		A0C52D2120B1B984004337F8 /* DropBoxTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52D1C20B1B984004337F8 /* DropBoxTableViewCell.m */; };
+		A0C52D2220B1B984004337F8 /* JsonData.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C52D1E20B1B984004337F8 /* JsonData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		115223DC49AA41CBFBC64BD6 /* Pods-iOSExerciseUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSExerciseUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSExerciseUITests/Pods-iOSExerciseUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1CA9A8761B7A8FD9B6F62AD6 /* Pods-iOSExercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSExercise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSExercise/Pods-iOSExercise.debug.xcconfig"; sourceTree = "<group>"; };
+		2A33E335F6248BD629896864 /* libPods-iOSExercise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSExercise.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DB78E299676D34F08656139 /* Pods-iOSExerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSExerciseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSExerciseTests/Pods-iOSExerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B0972F3192CC46273FCBA21 /* Pods-iOSExercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSExercise.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSExercise/Pods-iOSExercise.release.xcconfig"; sourceTree = "<group>"; };
 		A0C52CA420B1A060004337F8 /* iOSExercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSExercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A0C52CA720B1A060004337F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A0C52CA820B1A060004337F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A0C52CAA20B1A060004337F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A0C52CAB20B1A060004337F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A0C52CAE20B1A060004337F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0C52CB020B1A060004337F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0C52CB320B1A060004337F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0C52CB520B1A060004337F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +58,22 @@
 		A0C52CC720B1A061004337F8 /* iOSExerciseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSExerciseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C52CCB20B1A061004337F8 /* iOSExerciseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSExerciseUITests.m; sourceTree = "<group>"; };
 		A0C52CCD20B1A061004337F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C52D0220B1B8A2004337F8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0C52D0320B1B8A2004337F8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0C52D0620B1B8B6004337F8 /* DropboxContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropboxContentViewController.h; sourceTree = "<group>"; };
+		A0C52D0720B1B8B6004337F8 /* DropboxContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropboxContentViewController.m; sourceTree = "<group>"; };
+		A0C52D0820B1B8B6004337F8 /* waiting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = waiting.png; sourceTree = "<group>"; };
+		A0C52D1820B1B984004337F8 /* DataContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataContent.h; sourceTree = "<group>"; };
+		A0C52D1920B1B984004337F8 /* DataContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataContent.m; sourceTree = "<group>"; };
+		A0C52D1A20B1B984004337F8 /* Dropbox.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Dropbox.json; sourceTree = "<group>"; };
+		A0C52D1B20B1B984004337F8 /* DropBoxTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropBoxTableViewCell.h; sourceTree = "<group>"; };
+		A0C52D1C20B1B984004337F8 /* DropBoxTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropBoxTableViewCell.m; sourceTree = "<group>"; };
+		A0C52D1D20B1B984004337F8 /* JsonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonData.h; sourceTree = "<group>"; };
+		A0C52D1E20B1B984004337F8 /* JsonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonData.m; sourceTree = "<group>"; };
+		B2D331885DB56A325C374FDA /* libPods-iOSExerciseUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSExerciseUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1209642DA28AF4A6EE361F6 /* Pods-iOSExerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSExerciseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSExerciseTests/Pods-iOSExerciseTests.release.xcconfig"; sourceTree = "<group>"; };
+		EEBBD2E791C425061623259B /* Pods-iOSExerciseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSExerciseUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSExerciseUITests/Pods-iOSExerciseUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA64442B8BB8EF3FB54FF3EA /* libPods-iOSExerciseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOSExerciseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4428C818A83A059109509D06 /* libPods-iOSExercise.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5527CFFE7F993E8A293A28C1 /* libPods-iOSExerciseTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +97,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E73563A877F30A5C085A7D0 /* libPods-iOSExerciseUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F94A50089D7B9CD7425140F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A33E335F6248BD629896864 /* libPods-iOSExercise.a */,
+				FA64442B8BB8EF3FB54FF3EA /* libPods-iOSExerciseTests.a */,
+				B2D331885DB56A325C374FDA /* libPods-iOSExerciseUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9856756289BC1D9B290B9BFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CA9A8761B7A8FD9B6F62AD6 /* Pods-iOSExercise.debug.xcconfig */,
+				6B0972F3192CC46273FCBA21 /* Pods-iOSExercise.release.xcconfig */,
+				2DB78E299676D34F08656139 /* Pods-iOSExerciseTests.debug.xcconfig */,
+				E1209642DA28AF4A6EE361F6 /* Pods-iOSExerciseTests.release.xcconfig */,
+				EEBBD2E791C425061623259B /* Pods-iOSExerciseUITests.debug.xcconfig */,
+				115223DC49AA41CBFBC64BD6 /* Pods-iOSExerciseUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A0C52C9B20B1A060004337F8 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +134,8 @@
 				A0C52CBF20B1A061004337F8 /* iOSExerciseTests */,
 				A0C52CCA20B1A061004337F8 /* iOSExerciseUITests */,
 				A0C52CA520B1A060004337F8 /* Products */,
+				9856756289BC1D9B290B9BFF /* Pods */,
+				0F94A50089D7B9CD7425140F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +152,9 @@
 		A0C52CA620B1A060004337F8 /* iOSExercise */ = {
 			isa = PBXGroup;
 			children = (
-				A0C52CA720B1A060004337F8 /* AppDelegate.h */,
-				A0C52CA820B1A060004337F8 /* AppDelegate.m */,
-				A0C52CAA20B1A060004337F8 /* ViewController.h */,
-				A0C52CAB20B1A060004337F8 /* ViewController.m */,
-				A0C52CAD20B1A060004337F8 /* Main.storyboard */,
+				A0C52D0120B1B8A2004337F8 /* AppDelegate */,
+				A0C52D0520B1B8B6004337F8 /* View */,
+				A0C52D1720B1B984004337F8 /* Model */,
 				A0C52CB020B1A060004337F8 /* Assets.xcassets */,
 				A0C52CB220B1A060004337F8 /* LaunchScreen.storyboard */,
 				A0C52CB520B1A060004337F8 /* Info.plist */,
@@ -132,6 +181,39 @@
 			path = iOSExerciseUITests;
 			sourceTree = "<group>";
 		};
+		A0C52D0120B1B8A2004337F8 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A0C52D0220B1B8A2004337F8 /* AppDelegate.h */,
+				A0C52D0320B1B8A2004337F8 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A0C52D0520B1B8B6004337F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A0C52D0620B1B8B6004337F8 /* DropboxContentViewController.h */,
+				A0C52D0720B1B8B6004337F8 /* DropboxContentViewController.m */,
+				A0C52D0820B1B8B6004337F8 /* waiting.png */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A0C52D1720B1B984004337F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0C52D1820B1B984004337F8 /* DataContent.h */,
+				A0C52D1920B1B984004337F8 /* DataContent.m */,
+				A0C52D1A20B1B984004337F8 /* Dropbox.json */,
+				A0C52D1B20B1B984004337F8 /* DropBoxTableViewCell.h */,
+				A0C52D1C20B1B984004337F8 /* DropBoxTableViewCell.m */,
+				A0C52D1D20B1B984004337F8 /* JsonData.h */,
+				A0C52D1E20B1B984004337F8 /* JsonData.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C52CD020B1A061004337F8 /* Build configuration list for PBXNativeTarget "iOSExercise" */;
 			buildPhases = (
+				D34ED5A8CBF40A2BB2112734 /* [CP] Check Pods Manifest.lock */,
 				A0C52CA020B1A060004337F8 /* Sources */,
 				A0C52CA120B1A060004337F8 /* Frameworks */,
 				A0C52CA220B1A060004337F8 /* Resources */,
+				1A0B559F4AFC160B9B76D237 /* [CP] Embed Pods Frameworks */,
+				819FCC83B42C9AFA76341977 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,9 +241,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C52CD320B1A061004337F8 /* Build configuration list for PBXNativeTarget "iOSExerciseTests" */;
 			buildPhases = (
+				05167239E9553371B90C1A38 /* [CP] Check Pods Manifest.lock */,
 				A0C52CB820B1A061004337F8 /* Sources */,
 				A0C52CB920B1A061004337F8 /* Frameworks */,
 				A0C52CBA20B1A061004337F8 /* Resources */,
+				9055B5B14AC014173BCC09BA /* [CP] Embed Pods Frameworks */,
+				B53D71F7AC9102664B2CD1D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0C52CD620B1A061004337F8 /* Build configuration list for PBXNativeTarget "iOSExerciseUITests" */;
 			buildPhases = (
+				0EBB10E183D215DF9540F8C8 /* [CP] Check Pods Manifest.lock */,
 				A0C52CC320B1A061004337F8 /* Sources */,
 				A0C52CC420B1A061004337F8 /* Frameworks */,
 				A0C52CC520B1A061004337F8 /* Resources */,
+				8E549DA359B1FDB2B63A54FA /* [CP] Embed Pods Frameworks */,
+				4605BA1788C8A98D9B0628DE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,7 +331,8 @@
 			files = (
 				A0C52CB420B1A060004337F8 /* LaunchScreen.storyboard in Resources */,
 				A0C52CB120B1A060004337F8 /* Assets.xcassets in Resources */,
-				A0C52CAF20B1A060004337F8 /* Main.storyboard in Resources */,
+				A0C52D2020B1B984004337F8 /* Dropbox.json in Resources */,
+				A0C52D0A20B1B8B6004337F8 /* waiting.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,14 +352,155 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		05167239E9553371B90C1A38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0EBB10E183D215DF9540F8C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1A0B559F4AFC160B9B76D237 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSExercise/Pods-iOSExercise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4605BA1788C8A98D9B0628DE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSExerciseUITests/Pods-iOSExerciseUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		819FCC83B42C9AFA76341977 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSExercise/Pods-iOSExercise-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E549DA359B1FDB2B63A54FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSExerciseUITests/Pods-iOSExerciseUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9055B5B14AC014173BCC09BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSExerciseTests/Pods-iOSExerciseTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B53D71F7AC9102664B2CD1D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOSExerciseTests/Pods-iOSExerciseTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D34ED5A8CBF40A2BB2112734 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A0C52CA020B1A060004337F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C52CAC20B1A060004337F8 /* ViewController.m in Sources */,
+				A0C52D0420B1B8A2004337F8 /* AppDelegate.m in Sources */,
+				A0C52D1F20B1B984004337F8 /* DataContent.m in Sources */,
+				A0C52D0920B1B8B6004337F8 /* DropboxContentViewController.m in Sources */,
 				A0C52CB720B1A060004337F8 /* main.m in Sources */,
-				A0C52CA920B1A060004337F8 /* AppDelegate.m in Sources */,
+				A0C52D2120B1B984004337F8 /* DropBoxTableViewCell.m in Sources */,
+				A0C52D2220B1B984004337F8 /* JsonData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,14 +536,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A0C52CAD20B1A060004337F8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0C52CAE20B1A060004337F8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A0C52CB220B1A060004337F8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,10 +653,12 @@
 		};
 		A0C52CD120B1A061004337F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CA9A8761B7A8FD9B6F62AD6 /* Pods-iOSExercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Abc.iOSExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,10 +668,12 @@
 		};
 		A0C52CD220B1A061004337F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B0972F3192CC46273FCBA21 /* Pods-iOSExercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSExercise/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Abc.iOSExercise;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -454,6 +683,7 @@
 		};
 		A0C52CD420B1A061004337F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DB78E299676D34F08656139 /* Pods-iOSExerciseTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +698,7 @@
 		};
 		A0C52CD520B1A061004337F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1209642DA28AF4A6EE361F6 /* Pods-iOSExerciseTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -482,6 +713,7 @@
 		};
 		A0C52CD720B1A061004337F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEBBD2E791C425061623259B /* Pods-iOSExerciseUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSExerciseUITests/Info.plist;
@@ -495,6 +727,7 @@
 		};
 		A0C52CD820B1A061004337F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 115223DC49AA41CBFBC64BD6 /* Pods-iOSExerciseUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iOSExerciseUITests/Info.plist;
