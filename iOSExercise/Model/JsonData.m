@@ -16,7 +16,9 @@
     AppDelegate *appl;
 }
 @end
+//global string for assigning page name
 NSString *PageTitle;
+
 @implementation JsonData
 
 - (NSArray *)DataFromJSONFile:(NSURL *)url;
@@ -32,7 +34,6 @@ NSString *PageTitle;
     
     // Now create a NSDictionary from the JSON data
     NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-    NSLog(@"title is %@",jsonDictionary);
     PageTitle = [jsonDictionary objectForKey:@"title"];
 
     // Create a new array to hold the data
@@ -40,6 +41,7 @@ NSString *PageTitle;
     
     // Get an array of dictionaries with the key "Rows"
     NSArray *array = [jsonDictionary objectForKey:@"rows"];
+    
     // Iterate through the array of dictionaries
     for(NSDictionary *dict in array)
     {
@@ -48,8 +50,6 @@ NSString *PageTitle;
         // Add the data object to the array
         [rows addObject:datacontent];
     }
-//    appl = [[UIApplication sharedApplication]delegate];
-//    appl.PageTitle = self.PageTitle;
     // Return the array of data objects
     return rows;
 }

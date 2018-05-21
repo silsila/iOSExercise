@@ -10,8 +10,11 @@
 
 @interface DataContent : NSObject
 - (id)initWithJSONDictionary:(NSDictionary *)jsonDictionary;
+//declared to get imageurl
 @property (readonly) NSString *ImageString;
+//declared to get headingstring
 @property (readonly) NSString *HeadingString;
+//declared to get descriptionstring
 @property (readonly) NSString *DescString;
 
 @end

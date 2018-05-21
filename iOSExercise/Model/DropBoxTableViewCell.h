@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface DropBoxTableViewCell : UITableViewCell
+//label used to display heading in tableviewcell
 @property (nonatomic, strong) UILabel *headingLabel;
+//label used to display description in tableviewcell
 @property (nonatomic, strong) UILabel *descriptionLabel;
+//Imageview used to display image in tableviewcell
 @property (nonatomic, strong) UIImageView *thumbImage;
 @end

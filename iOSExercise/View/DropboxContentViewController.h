@@ -10,6 +10,8 @@
 #import "JsonData.h"
 #import "DataContent.h"
 @interface DropboxContentViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+
+//declared for tableview
 @property (strong,nonatomic) UITableView *DropboxTable;
-@property (strong,nonatomic) NSString     *pageTitle;
+
 @end

@@ -17,14 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // disabled cache by making diskcapacity 0
     NSURLCache *sharedCache = [[NSURLCache alloc] initWithMemoryCapacity:0
                                                             diskCapacity:0
                                                                 diskPath:nil];
     [NSURLCache setSharedURLCache:sharedCache];
     
+    
     //add navigationcontroller and make it rootviewcontroller
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-     DropboxContentViewController *Dropview = [[DropboxContentViewController alloc] init];
+    DropboxContentViewController *Dropview = [[DropboxContentViewController alloc] init];
     self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:Dropview] ;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
